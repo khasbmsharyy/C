@@ -1,0 +1,4 @@
+$(`<style>
+
+
+</style>`).insertBefore("body")
