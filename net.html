@@ -1,162 +1,483 @@
-
-<!DOCTYPE HTML>
-<html lang="ar" hreflang="ar-sa">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta property="og:description" content="شات سوريا توب  للجوال , دردشة غـنـاوي, شات جوال , شات سوريا توب , شات الغـنـاوي, شات الغـنـاويللجوال , شات سوريا توب جوال , دردشة غـنـاوي, شات سوريا توب كام , شات سوريا توب فله , دردشة شات سوريا توب , شات ksa chat ">
-<meta property="og:image" content="prv1.gif">
-<link rel="icon" type="image/x-icon" href=prv1.gif">
-<meta name="google" value="notranslate">
-<meta name="HandheldFriendly" content="True">
-<meta name="viewport" content=" user-scalable=0, width=device-width">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<title>قوانين شات سوريا توب للجوال</title>
-<meta name="viewport" content=" user-scalable=0, width=device-width">	
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-<style>
-:root{
-  --bg:#0a0a0a;
-  --card:#121212;
-  --gold:#ffd700;
-  --text:#f5f5f5;
-  --shadow:0 4px 14px rgba(255,215,0,.25);
-}
-body.light{
-  --bg:#ffffff;
-  --card:#f2f2f2;
-  --gold:#d4af37;
-  --text:#222;
-  --shadow:0 4px 12px rgba(0,0,0,.12);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-  background:var(--bg);color:var(--text);font-family:'Tajawal',sans-serif;line-height:1.8;
-  padding:18px;transition:.4s;
-}
-
-/* Logo */
-.logo{
-  width:388px;height:125px;object-fit:contain;border-radius:12px;border:3px solid var(--gold);
-  animation:float 6s ease-in-out infinite, glowLogo 3s ease-in-out infinite;
-  display:block;margin:0 auto 20px;
-}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-@keyframes glowLogo{0%{box-shadow:0 0 6px var(--gold)}50%{box-shadow:0 0 20px var(--gold)}100%{box-shadow:0 0 6px var(--gold)}}
-
-/* Title */
-h1{text-align:center;color:var(--gold);margin-bottom:20px;font-size:28px}
-
-/* Rules box */
-.rules{
-  background:var(--card);
-  padding:25px 22px;
-  border-radius:14px;
-  box-shadow:var(--shadow);
-  max-width:700px;
-  margin:0 auto 40px;
-}
-.rules h2{color:var(--gold);margin-bottom:14px;font-size:22px;text-align:center}
-.rules ul{list-style:none;padding:0}
-.rules li{margin:10px 0;font-size:16px;display:flex;align-items:flex-start;gap:8px}
-.rules li i{color:var(--gold);margin-top:4px}
-
-/* Footer */
-footer{text-align:center;margin-top:20px;font-size:14px;color:var(--gold)}
-
-/* Theme & Music buttons */
-.theme-btn,.music-btn{
-  position:fixed;width:46px;height:46px;border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:1001;transition:.3s;
-}
-.theme-btn{top:18px;right:18px;background:var(--gold);color:#000;font-size:20px;box-shadow:0 0 10px var(--gold)}
-.music-btn{bottom:18px;left:18px;background:var(--gold);color:#000;font-size:20px;box-shadow:0 0 10px var(--gold)}
-.theme-btn:hover,.music-btn:hover{transform:scale(1.1)}
-.music-btn.playing{animation:pulse 2.5s infinite}
-@keyframes pulse{0%{box-shadow:0 0 6px var(--gold)}50%{box-shadow:0 0 18px var(--gold)}100%{box-shadow:0 0 6px var(--gold)}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/container.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
-<body class="dark light">
-<!-- theme toggle -->
-<button class="theme-btn" id="themeToggle"><i class="fas fa-moon"></i></button>
-<!-- music -->
-<audio autoplay="" id="bgMusic" loop="" muted="" preload="auto" src="https://www.matb3aa.com/music/Abeer-Nehme/Men.Baadak-Abeer.Nehme-MaTb3aa.Com.mp3"></audio>
-<button class="music-btn" id="musicToggle"><i class="fas fa-music"></i></button>
-<!-- Logo -->
-<img alt="شعار" class="logo" src="aaa.gif">
-<h1>قوانين شات سوريا توب للجوال </h1><div style="text-align:center;margin-top:10px;margin-bottom:25px;"><a href="#" style="color:var(--gold);text-decoration:none;font-weight:700;"><i class="fas fa-arrow-left"></i> للعودة إلى نظام الاشتراكات اضغط هنا</a></div>
-<nav class="nav-icons">
-<a href="#"><i class="fas fa-list-alt"></i> الاشتراكات</a>
-<a href="#"><i class="fas fa-scroll"></i> القوانين</a>
-<a href="#"><i class="fas fa-comment-dots"></i> الشكاوي</a>
-<a href="#"><i class="fas fa-comments"></i> شات سوريا توب</a>
-</nav>
+<body >
 <style>
-.nav-icons {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin: 20px 0 30px;
-}
-.nav-icons a {
-  background: var(--card);
-  padding: 10px 20px;
-  border-radius: 999px;
-  color: var(--gold);
-  font-weight: 700;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.nav-icons a:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 10px var(--gold);
-}
-</style>
 
-<section class="rules">
-<h2><i class="fas fa-shield-alt"></i> قوانين الشات</h2>
+:root {
+    --primary: #0284c7;
+    --primary-dark: #0369a1;
+    --accent-gold: #f59e0b;
+    --bg-light: #f8fafc;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --white: #ffffff;
+    --border: #e2e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-section {
+       background: linear-gradient(135deg, #0284c7, #4388CC);
+    color: var(--white);
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.15rem;
+    max-width: 750px;
+    margin: 0 auto 25px auto;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: var(--white);
+    color: var(--primary-dark);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.contact-section {
+    padding: 70px 20px;
+    background: radial-gradient(circle at top right, rgba(2, 132, 199, 0.05), transparent 50%),
+                radial-gradient(circle at bottom left, rgba(245, 158, 11, 0.05), transparent 50%),
+                var(--bg-light);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.contact-info-luxury {
+    background: linear-gradient(145deg, #0f172a, #1e293b);
+    color: var(--white);
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+.info-header h2 span {
+    color: var(--accent-gold);
+}
+
+.info-header p {
+    color: #94a3b8;
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 35px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.method-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+}
+
+.method-item:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: var(--accent-gold);
+    transform: translateX(-5px);
+}
+
+.method-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(2, 132, 199, 0.2);
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--accent-gold);
+    flex-shrink: 0;
+}
+
+.method-details h4 {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-bottom: 3px;
+}
+
+.method-details p {
+    font-size: 1.1rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.contact-form-card {
+    background: var(--white);
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border: 1px solid var(--border);
+    position: relative;
+}
+
+.contact-form-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--accent-gold));
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-header {
+    margin-bottom: 30px;
+}
+
+.form-header h3 {
+    font-size: 1.6rem;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px 45px 14px 15px;
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+textarea.form-control {
+    padding: 15px;
+    resize: vertical;
+    min-height: 130px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: var(--white);
+    box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.1);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, var(--primary-dark), #0f172a);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.4);
+}
+
+
+.main-footer {
+    background-color: #0f172a;
+    color: var(--white);
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.main-footer p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.main-footer .copy {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+ 
+    <div class="header">
+<div class="container">
+<img class="logo" src="img/logo.png" alt="">
+<div class="links">
+<span class="icon">
+<span></span>
+<span></span>
+<span></span>
+</span>
 <ul>
-<li><i class="fas fa-check-circle"></i> يمنع منعاً باتاً <strong>السب والشتم</strong> بجميع أشكاله.</li>
-<li><i class="fas fa-check-circle"></i> احترام الإدارة والمشرفين وجميع الأعضاء.</li>
-<li><i class="fas fa-check-circle"></i> يُمنع نشر <strong>روابط خارجية</strong> أو إعلانات دون إذن.</li>
-<li><i class="fas fa-check-circle"></i> يُحظر طلب الصور أو المعلومات الشخصية من الأعضاء.</li>
-<li><i class="fas fa-check-circle"></i> الالتزام بآداب الحوار وتجنب المواضيع الحساسة (دين/سياسة).</li>
-<li><i class="fas fa-check-circle"></i> يُمنع استخدام برامج أو أساليب للإزعاج أو التخريب.</li>
+<li><a href="index.html">الرئيسية</a></li>
+<li class="play"><a href="plaies.html" style="background-color: #190857; border-radius: 40%;color: #fff;">العاب</a></li>
+<li><a href="technologies.html">التقنيات</a></li>
+<li><a href="paths.html">المسارات</a></li>
+<li><a href="tools.html">الادوات</a></li>
+<li><a href="news.html">الاخبار</a></li>
+<li><a href="questions.html">الاسئلة</a></li>
+<li><a href="contact_us.html">تواصل معنا</a></li>
 </ul>
-</section>
-<footer>© جميع الحقوق محفوظة شات سوريا توب للجوال 2025–2028</footer>
-<script>
-// Theme toggle
-const tBtn=document.getElementById('themeToggle');
-const icon=tBtn.querySelector('i');
-tBtn.addEventListener('click',()=>{
-  document.body.classList.toggle('light');
-  icon.classList.toggle('fa-sun');
-  icon.classList.toggle('fa-moon');
-});
+            </div>
+        </div>
+    </div>
+    <h1 class="title1">
+        <font color="#1B3280">IT</font>HUB
+    </h1>
+<div dir="rtl">
 
-// Music toggle
-const mBtn=document.getElementById('musicToggle');
-const audio=document.getElementById('bgMusic');
-audio.volume=0.35;
-let playing=true;
-function updateM(){mBtn.classList.toggle('playing',playing);}
-mBtn.addEventListener('click',()=>{
-  if(playing){audio.pause();playing=false;}else{audio.muted=false;audio.play();playing=true;}
-  updateM();
-});
-window.addEventListener('load',()=>{setTimeout(()=>{audio.muted=false;audio.play().catch(()=>{});playing=true;updateM();},600);});
-</script>
+    <section class="hero-section">
+        <div class="container">
+            <h1>تواصل مع فريق ITHUB</h1>
+            <p>نحن هنا للإجابة على استفساراتكم، استقبال مقترحاتكم، وبناء شراكات تقنية مميزة. تواصل معنا الآن ودعنا نصنع النجاح معاً.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary">راسلنا الآن</a>
+                <a href="index.html" class="btn-secondary">الرئيسية</a>
+            </div>
+        </div>
+    </section>
 
 
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9dd889e42e343db4',t:'MTc3MzcxNDIzOA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"6b26e6c9f3b94b68a0806cb80e1c7d22","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-</body></html>
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+
+             
+                <div class="contact-info-luxury">
+                    <div class="info-header">
+                        <h2>معلومات <span>التواصل</span></h2>
+                        <p>هل لديك استفسار تقني، مشروع برمجي، أو ترغب في الانضمام إلى مجتمعنا؟ قنواتنا مفتوحة دائماً لخدمتك بخبرة واحترافية.</p>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="method-item">
+                            <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="method-details">
+                                <h4>البريد الإلكتروني</h4>
+                                <p>abdualazizh111@ithub-it.com</p>
+                            </div>
+                        </div>
+
+                        <div class="method-item">
+                            <div class="method-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="method-details">
+                                <h4>رقم الهاتف والدعم</h4>
+                                <p>+967 738 388 163</p>
+                            </div>
+                        </div>
+
+                        <div class="method-item">
+                            <div class="method-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="method-details">
+                                <h4>المقر الرئيسي</h4>
+                                <p>اليمن-صنعاء</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <div class="form-header">
+                        <h3>أرسل رسالتك</h3>
+                        <p>املأ النموذج أدناه وسيقوم فريق المختصين بالرد عليك في أقرب وقت ممكن.</p>
+                    </div>
+
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <div class="input-with-icon">
+                                <input type="text" id="name" class="form-control" placeholder="أدخل اسمك الكريم..." required>
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <div class="input-with-icon">
+                                <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
+                                <i class="fas fa-at"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">موضوع الرسالة</label>
+                            <div class="input-with-icon">
+                                <input type="text" id="subject" class="form-control" placeholder="استفسار، اقتراح، تعاون..." required>
+                                <i class="fas fa-tag"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">نص الرسالة</label>
+                            <textarea id="message" class="form-control" placeholder="اكتب تفاصيل رسالتك هنا..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <span>إرسال الرسالة</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</div>
+   
+   <footer id="footer">
+        <div class="foot">
+            <h1 class="title10"><font color="#1B3280">IT</font>HUB</h1>
+            <p style="color: #333; font-size: 17px;"> دليلك الشامل في عالم التقنية </p>
+        </div>
+ <div class="cont">
+ <span class="fab fa-twitter"><a href=""></a></span>
+ <span class="fab fa-facebook"><a href=""></a></span>
+<span class="fab fa-instagram"><a href=""></a></span>
+<span class="fab fa-telegram"><a href=""></a></span>
+<span class="fab fa-whatsapp"><a href=""></a></span>
+</div>
+        <hr>
+        <h3> &copy;ITHUB 2026جميع الحقوق محفوظة لدى</h3>
+    </footer>
+</body>
+</html> 
