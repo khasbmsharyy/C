@@ -4,340 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/all.min.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/container.css">
-    <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/footer.css">
-</head>
-<body >
-<style>
-
-:root {
-    --primary: #0284c7;
-    --primary-dark: #0369a1;
-    --accent-gold: #f59e0b;
-    --bg-light: #f8fafc;
-    --text-dark: #1e293b;
-    --text-muted: #64748b;
-    --white: #ffffff;
-    --border: #e2e8f0;
+    <!-- الخارجية css  ملفات  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="">
+     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+#footer .connect{
+    width: 100%;
+    
+   
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Tajawal', sans-serif;
-    scroll-behavior: smooth;
+#footer .connect h3{
+    color: aliceblue;
+    font-size: 30px;
+    position: relative;
+    top: -40px;
 }
-
-body {
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+#footer .connect p{
+    color: #333;
+    font-weight:900;
+text-align: center;
+line-height:0px;
 }
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.hero-section {
-       background: linear-gradient(135deg, #0284c7, #4388CC);
-    color: var(--white);
-    text-align: center;
-    padding-top: 120px;
-    padding-bottom: 30px;
-}
-
-.hero-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.hero-section p {
-    font-size: 1.15rem;
-    max-width: 750px;
-    margin: 0 auto 25px auto;
-    opacity: 0.9;
-    line-height: 1.6;
-}
-
-.hero-btns {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 25px;
-}
-
-.btn-primary, .btn-secondary {
-    padding: 12px 28px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: transform 0.2s, box-shadow 0.2s;
-    display: inline-block;
-}
-
-.btn-primary {
-    background-color: var(--white);
-    color: var(--primary-dark);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.btn-secondary {
-    background: transparent;
-    color: var(--white);
-    border: 2px solid var(--white);
-}
-
-.btn-primary:hover, .btn-secondary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-.contact-section {
-    padding: 70px 20px;
-    background: radial-gradient(circle at top right, rgba(2, 132, 199, 0.05), transparent 50%),
-                radial-gradient(circle at bottom left, rgba(245, 158, 11, 0.05), transparent 50%),
-                var(--bg-light);
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 40px;
-    align-items: stretch;
-}
-
-.contact-info-luxury {
-    background: linear-gradient(145deg, #0f172a, #1e293b);
-    color: var(--white);
-    padding: 45px;
+#footer .form{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    margin: 20px;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
-    border: 1px solid rgba(245, 158, 11, 0.3);
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+   background-color: #4388CC;
+   border: #285888 solid;
+   text-align: center;
+   
 }
-
-.info-header h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: var(--white);
-}
-
-.info-header h2 span {
-    color: var(--accent-gold);
-}
-
-.info-header p {
-    color: #94a3b8;
-    line-height: 1.7;
-    font-size: 1rem;
-    margin-bottom: 35px;
-}
-
-.contact-methods {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.method-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background: rgba(255, 255, 255, 0.03);
-    padding: 15px 20px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    transition: all 0.3s ease;
-}
-
-.method-item:hover {
-    background: rgba(255, 255, 255, 0.07);
-    border-color: var(--accent-gold);
-    transform: translateX(-5px);
-}
-
-.method-icon {
-    width: 50px;
-    height: 50px;
-    background: rgba(2, 132, 199, 0.2);
-    border: 1px solid var(--primary);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    color: var(--accent-gold);
-    flex-shrink: 0;
-}
-
-.method-details h4 {
-    font-size: 0.95rem;
-    color: #94a3b8;
-    margin-bottom: 3px;
-}
-
-.method-details p {
-    font-size: 1.1rem;
-    color: var(--white);
-    font-weight: 500;
-}
-
-.contact-form-card {
-    background: var(--white);
-    padding: 45px;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-    border: 1px solid var(--border);
-    position: relative;
-}
-
-.contact-form-card::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary), var(--accent-gold));
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.form-header {
-    margin-bottom: 30px;
-}
-
-.form-header h3 {
-    font-size: 1.6rem;
-    color: var(--text-dark);
-    margin-bottom: 8px;
-}
-
-.form-header p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--text-dark);
-    margin-bottom: 8px;
-}
-
-.input-with-icon {
-    position: relative;
-}
-
-.input-with-icon i {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    color: var(--text-muted);
-    font-size: 1.1rem;
-}
-
-.form-control {
-    width: 100%;
-    padding: 14px 45px 14px 15px;
-    background: var(--bg-light);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    font-size: 1rem;
-    color: var(--text-dark);
-    transition: all 0.3s ease;
-}
-
-textarea.form-control {
-    padding: 15px;
-    resize: vertical;
-    min-height: 130px;
-}
-
-.form-control:focus {
-    outline: none;
-    border-color: var(--primary);
-    background: var(--white);
-    box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.1);
-}
-
-.btn-submit {
-    width: 100%;
-    padding: 15px;
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-    color: var(--white);
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.btn-submit:hover {
-    background: linear-gradient(135deg, var(--primary-dark), #0f172a);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.4);
-}
-
-
-.main-footer {
-    background-color: #0f172a;
-    color: var(--white);
+.head{
+    background-color: #4388CC;
     text-align: center;
-    padding: 40px 20px;
-    margin-top: 50px;
+    padding-top: 100px;
 }
-
-.footer-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary);
+.about{
+    width: 100%;
+}
+.about div{
+    width: 140px;
+    height: 140px;
+   text-align: center;
+    background-color: #4387cc84;
+    margin-left: 41%;
+    border: 2px solid #285888;
+    border-radius: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
+
+}
+.about div img{
+      position: relative;
+    right: -7px;
+    top: 8px;
 }
 
-.main-footer p {
-    color: #94a3b8;
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-}
 
-.main-footer .copy {
-    margin-top: 15px;
-    font-size: 0.8rem;
-    color: #64748b;
-}
 
-@media (max-width: 900px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-}
     </style>
- 
+</head>
+<body>
+<!--  قسم راس الموقع  -->
     <div class="header">
 <div class="container">
 <img class="logo" src="img/logo.png" alt="">
@@ -349,7 +85,7 @@ textarea.form-control {
 </span>
 <ul>
 <li><a href="index.html">الرئيسية</a></li>
-<li class="play"><a href="plaies.html" style="background-color: #190857; border-radius: 40%;color: #fff;">العاب</a></li>
+<li class="play"><a href="plaies.html" style="background-color: #190857; border-radius: 20px;color: #fff;">العاب</a></li>
 <li><a href="technologies.html">التقنيات</a></li>
 <li><a href="paths.html">المسارات</a></li>
 <li><a href="tools.html">الادوات</a></li>
@@ -360,115 +96,871 @@ textarea.form-control {
             </div>
         </div>
     </div>
-    <h1 class="title1">
-        <font color="#1B3280">IT</font>HUB
-    </h1>
-<div dir="rtl">
-
-    <section class="hero-section">
-        <div class="container">
-            <h1>تواصل مع فريق ITHUB</h1>
-            <p>نحن هنا للإجابة على استفساراتكم، استقبال مقترحاتكم، وبناء شراكات تقنية مميزة. تواصل معنا الآن ودعنا نصنع النجاح معاً.</p>
-            <div class="hero-btns">
-                <a href="#contact" class="btn-primary">راسلنا الآن</a>
-                <a href="index.html" class="btn-secondary">الرئيسية</a>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <div class="contact-grid">
-
-             
-                <div class="contact-info-luxury">
-                    <div class="info-header">
-                        <h2>معلومات <span>التواصل</span></h2>
-                        <p>هل لديك استفسار تقني، مشروع برمجي، أو ترغب في الانضمام إلى مجتمعنا؟ قنواتنا مفتوحة دائماً لخدمتك بخبرة واحترافية.</p>
-                    </div>
-
-                    <div class="contact-methods">
-                        <div class="method-item">
-                            <div class="method-icon"><i class="fas fa-envelope"></i></div>
-                            <div class="method-details">
-                                <h4>البريد الإلكتروني</h4>
-                                <p>abdualazizh111@ithub-it.com</p>
-                            </div>
-                        </div>
-
-                        <div class="method-item">
-                            <div class="method-icon"><i class="fas fa-phone-alt"></i></div>
-                            <div class="method-details">
-                                <h4>رقم الهاتف والدعم</h4>
-                                <p>+967 738 388 163</p>
-                            </div>
-                        </div>
-
-                        <div class="method-item">
-                            <div class="method-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div class="method-details">
-                                <h4>المقر الرئيسي</h4>
-                                <p>اليمن-صنعاء</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form-card">
-                    <div class="form-header">
-                        <h3>أرسل رسالتك</h3>
-                        <p>املأ النموذج أدناه وسيقوم فريق المختصين بالرد عليك في أقرب وقت ممكن.</p>
-                    </div>
-
-                    <form action="#" method="POST">
-                        <div class="form-group">
-                            <label for="name">الاسم الكامل</label>
-                            <div class="input-with-icon">
-                                <input type="text" id="name" class="form-control" placeholder="أدخل اسمك الكريم..." required>
-                                <i class="fas fa-user"></i>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">البريد الإلكتروني</label>
-                            <div class="input-with-icon">
-                                <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
-                                <i class="fas fa-at"></i>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">موضوع الرسالة</label>
-                            <div class="input-with-icon">
-                                <input type="text" id="subject" class="form-control" placeholder="استفسار، اقتراح، تعاون..." required>
-                                <i class="fas fa-tag"></i>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">نص الرسالة</label>
-                            <textarea id="message" class="form-control" placeholder="اكتب تفاصيل رسالتك هنا..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn-submit">
-                            <span>إرسال الرسالة</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
+    <!-- عنوان الموقع -->
+    <h1 class="title1"><font color="#1B3280">IT</font>HUB</h1>
+    <!-- القسم الرئيسي في بداية الموقع -->
+<div class="head">
+    <h2 style="text-align: center; padding: 10px;">عالم تقنية <br><font color="#1B3280">المعلومات</font></h2>
+    <p style="text-align: center;padding: 10px;">دليلك الشامل للاحتراف في عالم التقنية ITاكتشف احدث التقنيات. المسارات التعليمية والادوات التي تشكل صناعة ال </p>
+    <button style="border-radius: 10px;background-color: #285888;padding: 10px;width: 100px; padding: 5px;"><a href="#footer" style="text-decoration: none;color: aliceblue;" >استكشف المسارات</a></button><br>
+     <button style="border: 2px #285888 solid; border-radius: 10px;background-color: #4388CC;padding: 10px;width: 80px; padding: 5px;margin: 10px;"><a href="#footer" style="text-decoration: none;color: aliceblue;" >عن الموقع</a></button><br>
+     <img src="img/logo.png" alt="" style="width: 100px;background-color: #285888;border-radius: 50%;">
 </div>
-   
-   <footer id="footer">
+<div class="about" id="about">
+    <div style="text-align: center; "><img src="img/a1.png" alt="" style="width: 100px; text-align: center;"></div>
+</div>
+<!-- قوائم مميزات الموقع -->
+ <div style="text-align:right;">
+    <h2 style="text-align: center;">؟ <font color="#1B3280">IT HUB</font> ما هو </h2><br>
+<p class="a1" style="font-size: 18px; margin-left: 10px; margin: 10px;">هو منصة عربية شاملة تهدف الى تبسيط عالم تقنية العملومات للمبتدئين والمحترفيين على حد سواء. نقدم محتوى تعليمي مرتب. اخبار تقنية محدثة.ادوات مفيدة تساعد في رحلتك نحو الاحتراف IT HUB </p>
+<p class="a2" style="font-size: 18px; margin-left: 10px; margin: 10px;">هو وجهتك المثالية IT HUB سوا كنت طالبا في تخصص الحاسب. او مهتما بتعلم البرمجه او محترفا تبحث عن اخر التحديثات فان</p>
+<p class="a3" style="margin-right:20px ; font-size: clamp(15px, 1.5vw, 20px);; font-weight: 700;">محتوى عربي مبسط ومفهوم <span class="fa fa-star" style="color: #4388CC"></span></p>
+<p class="a4" style="margin-right:20px;font-size: clamp(15px, 1.5vw, 20px);;font-weight: 700;">مسارات تعليمية مرتبة من الصفر <span class="fa fa-star" style="color: #4388CC;"></span></p>
+<p class="a5" style="margin-right:20px;font-size: clamp(15px, 1.5vw, 20px);;font-weight: 700;">اخبار تقنية يومية ومحدثة <span class="fa fa-star" style="color: #4388CC"></span></p>
+<p class="a6" style="margin-right:20px;font-size: clamp(15px, 1.5vw, 20px);;font-weight: 700;">ادوات وموارد مجانية للمطوريين <span class="fa fa-star" style="color: #4388CC"></span></p>
+<p class="a7" style="margin-right:20px;font-size: clamp(15px, 1.5vw, 20px);;font-weight: 700;">مجتمع عربي للدعم والمساعده <span class="fa fa-star" style="color: #4388CC"></span></p><br>
+ </div>
+ <style>
+    /*خاصة ببطاقات الموقع التقنيات*/
+      .cards{
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 55px;
+        }
+        .card {
+            background: linear-gradient(
+                180deg,
+                #b8dcfa 0%,
+                #add5f5 100%
+            );
+            border: 2px solid #777;
+            border-radius: 28px;
+            min-height: 400px;
+            padding: 15px 20px 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow:
+                0 2px 5px rgba(0, 0, 0, 0.15);
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.20);
+        }
+        .icon {
+            width: 125px;
+            height: 125px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 75px;
+            margin-bottom: 5px;
+            flex-shrink: 0;
+        }
+        .card h3 {
+            font-size: clamp(20px, 1.8vw, 26px);
+            font-weight: bold;
+            margin: 5px 0 12px;
+            color: #050505;
+        }
+        .card p {
+            font-size: clamp(13px, 1.2vw, 16px);
+
+            line-height: 1.9;
+
+            color: #555;
+
+            max-width: 270px;
+
+            flex-grow: 1;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 165px;
+            height: 38px;
+            margin-top: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            background: linear-gradient(
+                to bottom,
+                #7fa8e8,
+                #1452b9
+            );
+            border: 1px solid #4b76bb;
+            box-shadow:
+                inset 0 1px 2px rgba(255,255,255,0.5),
+                0 2px 3px rgba(0,0,0,0.2);
+            transition: 0.25s;
+        }
+        .btn:hover {
+            background: linear-gradient(
+                to bottom,
+                #5e91dc,
+                #0c429d
+            );
+            transform: scale(1.03);
+        }
+/*تجاوب الصفحه لشاشات المتوسطه*/
+        @media (max-width: 1100px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 35px;
+            }
+                .cardss{
+              grid-template-columns: repeat(3, 1fr);
+                gap: 35px;  
+            }
+             .card3{
+          grid-template-columns: repeat(3, 1fr)!important;
+                gap: 70px !important;
+        }
+              .card2{
+        width: 210px;
+        margin-left: 15px;
+         }
+       
+            .card {
+                min-height: 390px;
+            }
+            .icon {
+                width: 115px;
+                height: 115px;
+                font-size: 70px;
+            }
+        }
+        /*تجاوب الصفحه لشاشات الصغيرة*/
+        @media (max-width: 990px) {
+            .cards {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                max-width: 500px;
+            }
+            .cardss{ 
+                
+                 grid-template-columns:3, 1fr;
+                gap: 154px !important;
+              max-width: 500px; 
+            }
+             .card3{
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr)!important;
+            gap: 70px;
+        }
+        .card3,.card1{
+    width: 400px !important;
+        }
+        .card3 .img1{
+            width: 400px !important;
+            height: 110px !important;
+        }
+              .card2{
+                 min-height: 390px;
+padding: 15px 20px 22px;
+                border-radius: 25px;
+         }
+            .card {
+                min-height: 390px;
+                padding: 15px 20px 22px;
+                border-radius: 25px;
+            }
+            .card h3 {
+                font-size: 23px;
+            }
+            .card p {
+                font-size: 15px;
+                max-width: 350px;
+            }
+            .icon {
+                width: 120px;
+                height: 120px;
+                font-size: 75px;
+            }
+            .btn {
+                width: 180px;
+                height: 40px;
+            }
+        }
+        /*تجاوب الصفحه لشاشات للهواتف*/
+        @media (max-width: 400px) {
+        .card3{
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr)!important;
+            gap: 40px;
+        }
+              .card2{
+margin: 0;
+         }
+            .card {
+                min-height: 370px;
+                border-radius: 22px;
+
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .icon {
+                width: 105px;
+                height: 105px;
+                font-size: 65px;
+            }
+            .card h3 {
+                font-size: 21px;
+            }
+            .card p {
+                font-size: 14px;
+                line-height: 1.8;
+            }
+            .btn {
+                width: 160px;
+            }
+        }
+
+ </style>
+ <!-- قسم ابرز التقنيات -->
+ <div>
+    <h2 style="text-align: center;">ابرز تقنيات <br> <font color="#1B3280">المعلومات</font></h2><br>
+    <p style="text-align: center;">لتعلم اساسيات كل منها ITتعرف على اهم التقنيات التي تشكل عالم ال </p><br><br>
+    <main class="cards" dir="rtl">
+        <!-- بطاقة الحوسبة السحابية -->
+ <div class="card">
+        <img class="icon" src="img/b1.png" alt="">
+        <h3>الحوسبه السحابية</h3>
+          <p> تعلم كيفية بناء وإدارة البنية
+                التحتية السحابية باستخدام
+                AWS و Azure و Google Cloud</p>
+        <a href="#" class="btn">Button</a>
+    </div>
+    <!-- بطاقة الذكاء الاصطناعي -->
+    <div class="card">
+        <img class="icon" src="img/b2.png" alt="" >
+        <h3>الذكاء الاصطناعي</h3>
+         <p> تعلم الذكاء الاصطناعي وتقنيات
+                Machine Learning و NLP و Deep Learning
+                باستخدام TensorFlow و PyTorch</p>
+       <a href="#" class="btn">Button</a>
+    </div>
+    <!-- بطاقة الامن الاسبراني -->
+    <div class="card">
+        <img class="icon" src="img/b3.png" alt="" >
+        <h3>الامن الاسبراني</h3>
+            <p> حماية الشبكات واختبار الاختراق
+                والتحقق من الثغرات الأمنية باستخدام
+                Kali Linux و Wireshark</p>
+        <a href="#" class="btn">Button</a>
+    </div>
+    <!-- بطاقة تطوير الويب -->
+    <div class="card">
+        <img class="icon" src="img/b4.png" alt=" ">
+        <h3>تطوير الويب</h3>
+         <p> بناء تطبيقات الويب الحديثة من
+                Frontend إلى Backend باستخدام
+                 React و Node.js وغيرها</p>
+            <a href="#" class="btn">Button</a>
+    </div>
+    <!-- بطاقة تطوير التطبيقات -->
+    <div class="card">
+        <img class="icon" src="img/b5.png" alt="" >
+        <h3>تطوير التطبيقات</h3>
+            <p> بناء تطبيقات الجوال المتعددة
+                للمنصات باستخدام Flutter و
+                Android و iOS و Swift</p>
+        <a href="#" class="btn">Button</a>
+    </div>
+    <!-- Devops بطاقة  -->
+    <div class="card">
+        <img class="icon" src="img/b6.png" alt="">
+        <h3>DevOps</h3>
+           <p> فهم عملية التطوير والنشر وإدارة
+                البنية التحتية باستخدام Docker
+                و Kubernetes و Jenkins</p>
+        <a href="#" class="btn">Button</a>
+    </div>
+    <!-- بطاقة بلوكشن -->
+    <div class="card">
+        <img class="icon" src="img/b7.png" alt="" >
+        <h3>بلوكتشين</h3>
+        <p> فهم تقنية السجلات الموزعة وتطوير
+                العقود الذكية باستخدام Ethereum
+                و Solidity</p>
+        <a href="#" class="btn">Button</a>
+    </div>
+    <div class="card">
+        <img class="icon" src="img/b8.png" alt="" >
+        <h3>بلوكتشين</h3>
+           <p> فهم تقنية السجلات الموزعة وتطوير
+                العقود الذكية باستخدام Ethereum
+                و Solidity</p>
+        <a href="#" class="btn">Button</a>
+    </div>
+    <br><br>
+    </main>
+ </div>
+ <style>
+    /*تنسيق خاص بمسارات الاحتراف*/
+         .cardss{
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 140px;
+        }
+.card2 {
+            background: linear-gradient(
+                180deg,
+                #bec7ce 0%,
+                #98c4e8 100%
+            );
+            border: 2px solid #777;
+            border-radius: 28px;
+            min-height: 300px;
+            padding: 15px 20px 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow:
+                0 2px 5px rgba(0, 0, 0, 0.15);
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+        .card2 span{
+            width: 50px;
+            height: 50px;
+            background-color: #4388CC;
+            border-radius: 50%;
+        }
+        .card2 span h1{
+color: #bec7ce;
+font-size: 43px;
+
+        }
+ </style>
+ <!-- قسم مسارات نحو الاحتراف -->
+  <div style="background-color: #4388CC;" ><br>
+    <h2 style="text-align: center; color: #fff;">مسارات نحو<br> <font color="#1B3280">الاحتراف</font></h2><br>
+    <p style="text-align: center;">لتعلم اساسيات كل منها ITتعرف على اهم التقنيات التي تشكل عالم ال </p><br><br>
+    <main class="cardss" dir="rtl">
+ <div class="card2" >
+       <span><h1>1</h1></span><br><br>
+        <h3>المستوى المبتدئ</h3><br><br>
+          <p>الاساسية IT  مفاهيم الشبكات انظمة التشغيل والتعرف على مصطلحات ال HTML/CSS اساسيات البرمجة </p><br><br>
+        <a href="#" class="btn">Button</a>
+    </div>
+    <div class="card2">
+     <span><h1>2</h1></span><br><br>
+        <h3>المستوى المتوسط</h3><br><br>
+         <p>وبدا بناء المواقع Git قواعد البيانات لغات برمجة  متقدمة اطار العمل </p><br><br><br>
+       <a href="#" class="btn">Button</a>
+    </div>
+    <div class="card2" >
+         <span><h1>3</h1></span><br><br>
+        <h3>المستوى المتقدم</h3><br><br>
+         <p> الامن المتقدم ادارة المشاريع التقنية والتخصص في مجال محدد DevOps تصميم الانظمة </p><br><br>
+        <a href="#" class="btn">Button</a>
+    </div>
+    </main>
+ </div>
+<style>
+     /*تنسيق قسم خاص باهم الادوات*/
+    .cardsss{
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 55px;
+        }
+</style>
+   <div>
+    <!-- قسم اهم الادوات -->
+    <!-- قسم ابرز التقنيات -->
+    <br><h2 style="text-align: center;">ابرز تقنيات <br> <font color="#1B3280">المعلومات</font></h2><br>
+    <p style="text-align: center;">لتعلم اساسيات كل منها ITتعرف على اهم التقنيات التي تشكل عالم ال </p><br><br>
+    <main class="cardsss" dir="rtl">
+ <div class="card">
+        <img class="icon" src="img/c1.png" alt="">
+        <h3>VS Code</h3>
+          <p> افضل محرر اكواد مجاني يدعم جميع</p><br>
+          <p>افضل محرر اكواد مجاني يدعم جميع </p>
+          <a href="#" class="bttn" style="text-align: center;">تحميل الاداة</a>
+        <a href="#" class="btn">Button</a>
+    </div>
+    <div class="card">
+        <img class="icon" src="img/c2.png" alt="" >
+        <h3>Figma</h3>
+              <p>اداة تصميم واجهات المستخدم وتجربة</p><br>
+          <p>بشكل احترافي UI/UX المستخدم</p><br>
+          <a href="#" class="bttn" style="text-align: center;">زيارة الموقع</a><br>
+       <a href="#" class="btn">Button</a>
+    </div>
+    <div class="card">
+        <img class="icon" src="img/c3.png" alt="" >
+        <h3>Github</h3>
+             <p>منصة استضافة المشاريع البرمجية</p><br>
+          <p>والتعاون مع المتطورين حول العالم</p><br>
+          <a href="#" class="bttn" style="text-align: center;">زيارة الموقع</a><br>
+        <a href="#" class="btn">Button</a>
+    </div>
+    <div class="card">
+        <img class="icon" src="img/c4.png" alt=" ">
+        <h3>Postman</h3>
+         <p> اداة اختبار واجهات البرمجة التطبيقات</p><br>
+         <p>بسهوله وفعالية APIs</p><br>
+          <a href="#" class="bttn" style="text-align: center;">تحميل الاداة</a><br>
+            <a href="#" class="btn">Button</a>
+    </div>
+    <div class="card">
+        <img class="icon" src="img/c5.png" alt="" >
+        <h3>Docker</h3>
+        <p> منصة حاويات لتطوير ونشر التطبيقات </p><br>
+         <p>بشكل منسق ومعزول</p><br>
+          <a href="#" class="bttn" style="text-align: center;">تحميل الاداة</a><br><br>
+        <a href="#" class="btn">Button</a>
+    </div>
+    <div class="card">
+        <img class="icon" src="img/c6.png" alt="">
+        <h3>Firebase</h3>
+           <p> فهم عملية التطوير والنشر وإدارة
+                البنية التحتية باستخدام Docker
+                و Kubernetes و Jenkins</p>
+        <a href="#" class="btn">Button</a>
+    </div>
+    <br><br>
+    </main>
+</div>
+<style>
+   /* تنسيق الخاص بالاخبار */
+   .card3{
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 190px;
+        }
+         .card1 {
+            background: linear-gradient(
+                180deg,
+                #b8dcfa 0%,
+                #add5f5 100%
+            );
+            border: 2px solid #777;
+            border-radius: 28px;
+            min-height: 400px;
+                padding: 17px 0px 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow:
+                0 2px 5px rgba(0, 0, 0, 0.15);
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+     .card1{
+        width: 100%;
+     }
+        .card1 img{
+            width: 80px;
+            height: 80px;
+        }
+        .card3 .img1{
+            padding: 0;
+            margin: 0;
+            width: 300px;
+            height: 100px;
+            background-color:#000066 ;
+            position: relative;
+            top: -17px;
+            border-radius: 20px 20px 0px 0px;
+        }
+</style>
+<!-- قسم اخبار التقنية -->
+<div class="card3">
+    <div style="text-align: center;">
+        <h2> اخر <font color="#1B3280">اخبار التقنية</font></h2><br>
+        <p>تابع احدث التطورات والاخبار في عالم التقنية المعلومات</p><br>
+        <div class="card3">
+<div class="card1">
+    <div class="img1">
+            <div><img src="img/b2.png" alt="" ></div>
+        </div>
+        <div>
+            <span style="color: red;">  </span><br>
+            <h3>الذكاء الاصطناعي يغير مستقبل البرمجة</h3><br><br>
+            <p>ادوات الذكاء الاصطناعي الجديدة تساعد</p><br>
+            <p>المطورين على كتابة الاكواد بشكل اسرع</p><br>
+            <p>واكثر دقة من اي وقت اخر</p>
+        </div>
+       
+</div>
+<div class="card1">
+    <div class="img1">
+            <div><img src="img/c6.png" alt=""></div>
+        </div>
+        <div>
+            <span style="color: red;">  </span><br>
+            <h3>الحواسبة السحابية في توسع مستمر</h3><br><br>
+            <p>توقعات بزيادة الاتفاق على الخدمات</p><br>
+            <p>السحابية بنسبة25% خلال العام القادم</p><br>
+            <p>مع دخول شركات جديدة</p>
+        </div>
+        
+</div>
+<div class="card1">
+    <div class="img1">
+        <div><img src="img/b3.png" alt=""></div>
+        </div>
+        <div>
+            <span style="color: red;">  </span><br>
+            <h3>تهديدات الامن الاسيبراني في ازدياد</h3><br><br>
+            <p>تقرير جديد يكشف عن ارتفاع هجمات</p><br>
+            <p>الفدية بنسبة 40% وضرورة تعزيز </p><br>
+            <p>الامن الرقمي للموسسات</p>
+        </div>
+        </div>
+</div>
+    </div>
+    <style>
+
+    </style>
+
+</div>
+<style>
+    /* تنسيق الاسئلة الشائعة */
+    .cc1 {
+            width: min(1200px, 92%);
+            margin: 0 auto;
+            padding: 25px 0 50px;
+        }
+          .header h1 {
+            font-size: clamp(25px, 4vw, 40px);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .cc1 h1 .blue {
+            color: #0758a5;
+        }
+        .cc1 p {
+            font-size: clamp(16px, 2vw, 22px);
+            color: #222;
+        }
+        .faq {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 70px 85px;
+            align-items: start;
+        }
+.card5 {
+            position: relative;
+            background: #b9dcfa;
+            border: 2px solid #777;
+            height: 450px m !important;
+            border-radius: 40px;
+            min-height: 500px;
+            padding: 35px 25px 75px;
+            text-align: center;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+       .card5 .arrow {
+            position: absolute;
+            top: 35px;
+            right: 20px;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 25px solid #ff0000;
+            filter: drop-shadow(1px 1px 0 #222);
+        }
+          .card5 h2 {
+            font-size: clamp(20px, 2.2vw, 29px);
+            line-height: 1.5;
+            margin-bottom: 25px;
+            padding: 0 20px;
+            font-weight: bold;
+        }
+
+        .card5 p {
+            color: #999;
+            font-size: clamp(15px, 1.5vw, 20px);
+            line-height: 2;
+            font-weight: bold;
+            flex: 1;
+        }
+
+        .card5 button {
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 170px;
+            max-width: 70%;
+            height: 40px;
+            border: 1px solid #7392c5;
+            border-radius: 5px;
+            background: linear-gradient(
+                to bottom,
+                #86a9e9,
+                #3168c5
+            );
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .card5 button:hover {
+            transform: translateX(-50%) scale(1.04);
+            background: linear-gradient(
+                to bottom,
+                #9bbaff,
+                #245ab4
+            );
+        } 
+        .card5:nth-child(4) {
+            grid-column: 1 / 2;
+        }
+        .card5:nth-child(5) {
+            grid-column: 2 / 3;
+        }
+         @media (max-width: 1050px) {
+            .cc1 {
+                width: 90%;
+            }
+            .faq {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px 35px;
+            }
+            .card5:nth-child(4),
+            .car5:nth-child(5) {
+                grid-column: auto;
+            }
+            .card5 {
+                min-height: 412px;
+            }
+        }
+         @media (max-width: 700px) {
+            .cc1 {
+                width: 92%;
+                padding-top: 20px;
+            }
+            .cc1 h1 {
+                font-size: 27px;
+            }
+            .cc1 p {
+                font-size: 15px;
+                line-height: 1.8;
+            }
+            .faq {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            .card5:nth-child(4),
+            .card5:nth-child(5) {
+                grid-column: auto;
+            }
+            .card5 {
+                min-height: 290px;
+                border-radius: 30px;
+                padding: 30px 20px 70px;
+            }
+            .card5 h2 {
+                font-size: 22px;
+                padding: 0 25px;
+                margin-bottom: 18px;
+            }
+            .card5 p {
+                font-size: 16px;
+                line-height: 1.9;
+            }
+            .arrow {
+                top: 27px;
+                right: 15px;
+                border-left-width: 12px;
+                border-right-width: 12px;
+                border-top-width: 21px;
+            }
+            .card5 button {
+                width: 160px;
+                height: 38px;
+            }
+        }
+        @media (max-width: 400px) {
+            .cc1 {
+                width: 94%;
+            }
+            .cc1 h1 {
+                font-size: 23px;
+            }
+            .cc1 p {
+                font-size: 14px;
+            }
+            .card5 {
+                min-height: 340px;
+                border-radius: 25px;
+                padding: 25px 15px 65px;
+            }
+            .card5 h2 {
+                font-size: 19px;
+            }
+            .card5 p {
+                font-size: 14px;
+            }
+            .card5 button {
+                width: 140px;
+                font-size: 13px;
+            }
+        }
+</style>
+<!-- قسم الاسئلة الشائعة -->
+    <div class="cc1" style="text-align: center; ">
+            <h1>
+                <span class="blue">الأسئلة</span>الشائعة</h1>
+            <p>
+                إجابات على أكثر الأسئلة التي يطرحها المبتدئون في مجال الـ IT
+            </p><br>
+        <main class="faq">
+            <div class="card5">
+                <span class="arrow"></span>
+                <h2>
+                    ما هي أفضل لغة برمجية
+                    للمبتدئين في الـ IT؟
+                </h2>
+                <p>
+                    يُنصح المبتدئون ببدء لغة
+                    Python لسهولة تعلمها وقرائتها
+                    من اللغة الإنجليزية، أما إذا كان
+                    التركيز على تطوير الويب فإن
+                    JavaScript و HTML و CSS
+                    أيضًا ضروريان لفهم أساسيات
+                    بناء المواقع.
+                </p>
+<button> Button</button>
+            </div>
+            <div class="card5">
+                <span class="arrow"></span>
+                <h2>
+                    كم الوقت المطلوب لتعلم
+                    البرمجة من الصفر؟
+                </h2>
+                <p>
+                    يعتمد على التفرغ والممارسة
+                    اليومية بشكل عام يمكن إتقان
+                    الأساسيات خلال 3-6 أشهر من
+                    الدراسة المنتظمة 2-3 ساعات
+                    يوميًا والوصول إلى مستوى
+                    احترافي خلال 1-2 سنة.
+                </p>
+                <button>
+                    Button
+                </button>
+            </div>
+            <div class="card5">
+                <span class="arrow"></span>
+                <h2> هل احتاج شهادة جامعية
+                    للعمل في الـ IT؟</h2>
+                <p>
+                    ليس بالضرورة مجال الـ IT
+                    يعتمد بشكل كبير على المهارات
+                    العملية والمشاريع الشخصية
+                    والعديد من الشركات الكبرى
+                    تركز على المهارات والخبرة
+                    العملية أكثر من الشهادات
+                    الأكاديمية.
+                </p>
+                <button>
+                    Button
+                </button>
+            </div>
+            <div class="card5">
+                <span class="arrow"></span>
+                <h2> ما هي أفضل مجالات الـ IT
+                    من حيث الطلب الوظيفي؟ </h2>
+                <p>
+                    الأمن السيبراني والذكاء
+                    الاصطناعي وعلم البيانات
+                    والحوسبة السحابية هي من أكثر
+                    المجالات طلبًا حاليًا.
+                    وتزداد حاجة سوق العمل إلى
+                    هذه المجالات بشكل مستمر.
+                </p>
+                <button>
+                    Button
+                </button>
+            </div>
+            <div class="card5">
+                <span class="arrow"></span>
+                <h2> ما هو الفرق بين Frontend
+                    و Backend؟</h2>
+                <p> Frontend هو ما يراه المستخدم
+                    من الواجهات الأساسية ويستخدم
+                    HTML و CSS و JavaScript.
+                    أما Backend فهو الجزء الخفي
+                    من الموقع ويهتم بالخادم وقاعدة
+                    البيانات ويستخدم Node.js
+                    و Python و PHP وغيرها.</p>
+<button>Button</button>
+            </div>
+        </main>
+
+    </div>
+    <!-- footer قسم ال  -->
+<footer id="footer">
+    <div class="connect">
+        <!-- معلومات التواصل -->
+        <h3>تواصل <font color="#1B3280">معنا</font></h3>
+        <p>لديك سؤال او اقتراح؟ نحن هنا للمساعدة</p>
+         <a class="email" href=""> abdualaziz@gamil.com  <img src="img/email.png" alt="" style="width: 50px; height: 50px;"></a><br>
+        <a class="call" href=""> +967 738 388 163 <img src="img/call.png" alt="" style="width: 50px; height: 50px;"></a><br>
+        <a class="maw" href="">اليمن-صنعاء <img src="img/maw.png" alt="" style="width: 50px; height: 50px;"></a><br>
+        <a class="time" href="">السبت-الخميس:9ص-6م <img src="img/time.png" alt="" style="width: 50px; height: 50px;"></a>
+    </div>
+    <!-- نموذج التواصل -->
+    <div class="form" style="text-align: center;" >
+        <form action=""dir="rtl">
+            <label for="text"> الاسم كامل</label><br>
+            <input type="text" placeholder="ادخل اسمك" style="width: 200px;height: 30px;border-radius: 10px;"><br><br><br>
+              <label for="email"> البريد الاكتروني</label><br>
+            <input type="email" placeholder="abdualaziz@gmail.com"style="width: 200px;height: 30px;border-radius: 10px;"><br><br><br>
+            <label for="text"> الموضوع</label><br>
+            <input type="text"placeholder="موضوع الرسالة" style="width: 200px;height: 30px;border-radius: 10px; "><br><br><br>
+            <label for="">الرسالة</label><br>
+                   <textarea name="" id="" placeholder="اكتب رسالتك هنا" style="width: 200px; height: 150px;border-radius: 10px;"></textarea><br>
+                   <input type="submit" style="width: 150px; margin: 20px;border-radius: 20px;">
+        </form>
+    </div>
+    <!-- اسم الموقع -->
         <div class="foot">
             <h1 class="title10"><font color="#1B3280">IT</font>HUB</h1>
             <p style="color: #333; font-size: 17px;"> دليلك الشامل في عالم التقنية </p>
         </div>
+        <!-- روابط التواصل بنا -->
  <div class="cont">
  <span class="fab fa-twitter"><a href=""></a></span>
  <span class="fab fa-facebook"><a href=""></a></span>
@@ -477,7 +969,8 @@ textarea.form-control {
 <span class="fab fa-whatsapp"><a href=""></a></span>
 </div>
         <hr>
+        <!-- حقوق الملكية -->
         <h3> &copy;ITHUB 2026جميع الحقوق محفوظة لدى</h3>
-    </footer>
+     </footer>
 </body>
-</html> 
+</html>
